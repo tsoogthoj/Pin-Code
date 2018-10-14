@@ -1,0 +1,63 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 1s linear;
+}
+.wrong {
+  background-color: red;
+}
+.correct {
+  background-color: green;
+}
+#pin {
+  background: #212121;
+  height: 600px;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5%;
+  border-radius: 2%;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.dots {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dot {
+  position: relative;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+#pin p {
+  font-size: 20px;
+}
+
+.numbers {
+/* background-color: red; */
+width: 90%;
+height: 75%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 45px;
+}
+
+.number {
+  border: 1px solid gray;
+  padding: 30px;
+  border-radius: 50%;
+}
