@@ -19,11 +19,12 @@
         <a class="nav-item nav-link" id="nav-staff-tab" data-toggle="tab" href="" role="tab" aria-controls="nav-staff" aria-selected="false">Staff</a>
     </div>
     <div class="tab-content" id="nav-tabContent">
+        
         <div id="nav-timeClockSheet">
             <div class="toolbar">
                 <h2 class="navDateRange"></h2>
                 <div class="navBtn">
-                    <button type="button" id="todayBtn">Today</button>
+                    <button type="button" id="todayBtn">Current Week</button>
                     <div>
                         <button type="button" id="leftArrowBtn">&#60;</button>
                         <button type="button" id="rightArrowBtn">&#62;</button>
@@ -31,88 +32,188 @@
                 </div>
             </div>
             <br>
-            <div class="weekDisplay">
+            <div class="content">
+                <!-- staff's name -->
                 <div class="nameDisplay">
                     <table>
+                        <thead>
+                            <tr>
+                                <th class="listStaff" data-date=""><span>Name</span></th>
+                            </tr>
+                        </thead>
                         <tbody>
-                            <thead>
-                                <tr>
-                                    <th class="listStaff" data-date=""><span>Name</span></th>
-                                </tr>
-                            </thead>
+                            <tr>
+                                <td>Chong</td>
+                            </tr>
+                            <tr>
+                                <td>Mao</td>
+                            </tr>
+                            <tr>
+                                <td>Kevin</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
-                
-                <div class="time">
-                    <div class="dateDisplay">
-                        <table>
-                            <tbody>
-                                <thead>
-                                    <tr class="daysOfWeek">
-                                        <th class="mon weekday" data-date="">Mon<span></span></th>
-                                        <th class="tue weekday" data-date="">Tues<span></span></th>
-                                        <th class="wed weekday" data-date="">Wed<span></span></th>
-                                        <th class="thu weekday" data-date="">Thur<span></span></th>
-                                        <th class="fri weekday" data-date="">Fri<span></span></th>
-                                    </tr>
-                                </thead>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="contentDisplay">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <!-- clock time -->
+                <div class="timeDisplay">
+                    <table>
+                        <thead>
+                            <tr class="daysOfWeek">
+                                <th class="mon weekday" data-date="">Mon<span></span></th>
+                                <th class="tue weekday" data-date="">Tues<span></span></th>
+                                <th class="wed weekday" data-date="">Wed<span></span></th>
+                                <th class="thu weekday" data-date="">Thur<span></span></th>
+                                <th class="fri weekday" data-date="">Fri<span></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>In</th>
+                                                <th>Out</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10:30 AM</td>
+                                                <td>10:35 AM</td>
+                                                <td>5:00 min</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>In</th>
+                                                <th>Out</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10:30 AM</td>
+                                                <td>10:35 AM</td>
+                                                <td>5:00 min</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>In</th>
+                                                <th>Out</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10:30 AM</td>
+                                                <td>10:35 AM</td>
+                                                <td>5:00 min</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>In</th>
+                                                <th>Out</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10:30 AM</td>
+                                                <td>10:35 AM</td>
+                                                <td>5:00 min</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>In</th>
+                                                <th>Out</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>10:30 AM</td>
+                                                <td>10:35 AM</td>
+                                                <td>5:00 min</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>dadsfas</td>
+                                <td>dadsfas</td>
+                                <td>dadsfas</td>
+                                <td>dadsfas</td>
+                                <td>dadsfas</td>
+                            </tr>
+                            <tr>
+                                <td>dadsfas</td>
+                                <td>dadsfas</td>
+                                <td>dadsfas</td>
+                                <td>dadsfas</td>
+                                <td>dadsfas</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            
         </div>
 
+    </div>
 
-        <div id="nav-staff">
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#addNewStaffForm" aria-expanded="false" aria-controls="addNewStaffForm" id="toggleAddStaffForm">Add New Staff <span id="toggleText">(Click to expand)</span></button>
-            <div class="collapse multi-collapse" id="addNewStaffForm">
-                <form class="jumbotron addForm">
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName"  placeholder="Enter First Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" id="lastName"  placeholder="Enter Last Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="newPin">Pin</label>
-                        <input type="number" class="form-control" id="newPin" placeholder="Enter Four Digit Pin">
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="addNewStaffBtn">Submit</button>
-                </form>
-            </div>
-            <div class="staffInfo">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Pin</th>
-                        </tr>
-                    </thead>
-                    <tbody id="displayStaffInfo">
 
-                    </tbody>
-                </table>
-            </div>
+    <div id="nav-staff">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#addNewStaffForm" aria-expanded="false" aria-controls="addNewStaffForm" id="toggleAddStaffForm">Add New Staff <span id="toggleText">(Click to expand)</span></button>
+        <div class="collapse multi-collapse" id="addNewStaffForm">
+            <form class="jumbotron addForm">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName"  placeholder="Enter First Name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName"  placeholder="Enter Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="newPin">Pin</label>
+                    <input type="number" class="form-control" id="newPin" placeholder="Enter Four Digit Pin">
+                </div>
+                <button type="submit" class="btn btn-primary" id="addNewStaffBtn">Submit</button>
+            </form>
+        </div>
+        <div class="staffInfo">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Pin</th>
+                    </tr>
+                </thead>
+                <tbody id="displayStaffInfo">
+
+                </tbody>
+            </table>
         </div>
     </div>
 
