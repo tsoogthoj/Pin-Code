@@ -5,12 +5,15 @@ body {
   justify-content: center;
   transition: background-color 1s linear;
 }
+
 .wrong {
   background-color: red;
 }
+
 .correct {
   background-color: green;
 }
+
 #pin {
   background: #212121;
   height: 600px;
@@ -44,8 +47,12 @@ body {
 
 .numbers {
 /* background-color: red; */
-width: 90%;
-height: 75%;
+  width: 90%;
+  height: 75%;
+}
+
+.numbers:hover {
+  cursor: pointer;
 }
 
 .row {
