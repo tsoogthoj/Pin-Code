@@ -67,3 +67,30 @@ button {
 #nav-add {
     padding-top: 2%;
 }
+
+/* display clock in data */
+.weekDisplay {
+    position: relative;
+}
+/* name section */
+.nameDisplay { 
+    position: absolute;
+    width: 200px;
+}
+.listStaff {
+    width: 200px;
+    border: 1px solid black;
+}
+
+/* time section */
+.time {
+    position: relative;
+    margin-left: 200px;
+    overflow-x: scroll;
+}
+
+.weekday {
+    border: 1px solid black;
+    padding-left: 10px;
+    width: 800px;
+}

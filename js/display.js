@@ -204,7 +204,22 @@ let weekArray = {
     },
 }
 
+// display weekdays
+function displayWeekdays() {
+    let displayText = []
+    for (let i = 0; i < 5; i++) {
+        displayText.push(" - " + weekArray[i]['day'])
+    }
+    $('.mon').children('span').text(displayText[0])
+    $('.tue').children('span').text(displayText[1])
+    $('.wed').children('span').text(displayText[2])
+    $('.thu').children('span').text(displayText[3])
+    $('.fri').children('span').text(displayText[4])
 
+}
+
+
+// get number of days of month
 let numberOfDays = function(year, month) {
     daysInMonth = moment(year + '-' + month).daysInMonth()
 }
@@ -213,6 +228,7 @@ let increaseDays = function() {
     for (let i = 0; i < 5; i++) {
         weekArray[i]['day'] = weekArray[0]['day'] + i
         weekArray[i]['month'] = weekArray[0]['month']
+        weekArray[i]['year'] = weekArray[0]['year']
         // check for going into next month
         if (weekArray[i]['day'] > daysInMonth) {
             numberOfDays(weekArray[i]['year'], weekArray[i]['month'])
@@ -269,6 +285,7 @@ function displayDates() {
         secondMonth = ''
     }
     $('.navDateRange').text(firstMonth + " " + monday + firstYear + " - " + secondMonth + " " + friday + secondYear)
+    displayWeekdays()
 }
 
 // go back one week
@@ -289,7 +306,6 @@ function backWeek() {
         }
         numberOfDays(weekArray[0]['year'], weekArray[0]['month'])
         weekArray[0]['day'] = daysInMonth
-
     }
     increaseDays()
     displayDates()
@@ -317,6 +333,7 @@ let getCurrent = function() {
     weekArray[0]['day'] = startOfWeekMon
     increaseDays()
     displayDates()
+    displayWeekdays()
 }   
 getCurrent()
 
