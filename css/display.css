@@ -9,15 +9,14 @@ body,html {
 /* calendar styles */
 .toolbar {
     display: flex;
-}
-
-.navDateRange {
-    flex: 3;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .navBtn {
-    flex: 1;
-    display: inline-flex;
+    display: flex;
+    width: 280px;
 }
 
 #todayBtn {
@@ -68,7 +67,7 @@ button {
     padding-top: 2%;
 }
 
-/* display clock in data */
+/* display times in data */
 .content {
     display: flex;
 }
