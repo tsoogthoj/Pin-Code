@@ -13,3 +13,4 @@ Technoloy used
 - HTML
 - CSS
 - Jquery
+- Moment JS
