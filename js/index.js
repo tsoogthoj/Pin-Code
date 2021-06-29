@@ -1,11 +1,11 @@
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyAcADcaoayZEsNr9XAaRpat0C2pwwQzWV0",
-  authDomain: "time-clock-1d087.firebaseapp.com",
-  projectId: "time-clock-1d087",
-  storageBucket: "time-clock-1d087.appspot.com",
-  messagingSenderId: "208087128442",
-  appId: "1:208087128442:web:0702a72b852086ed011ec3",
+    apiKey: "AIzaSyAcADcaoayZEsNr9XAaRpat0C2pwwQzWV0",
+    authDomain: "time-clock-1d087.firebaseapp.com",
+    projectId: "time-clock-1d087",
+    storageBucket: "time-clock-1d087.appspot.com",
+    messagingSenderId: "208087128442",
+    appId: "1:208087128442:web:0702a72b852086ed011ec3"
 };
 
 firebase.initializeApp(config);
@@ -87,22 +87,22 @@ $(".number").click(function () {
           [todayDate]: firebase.firestore.FieldValue.arrayUnion(time),
         });
 
-      correctSound.play();
-      $("body").addClass("correct");
-      setTimeout(function () {
-        $("body").removeClass("correct");
-      }, 500);
-    } else {
-      wrongSound.play();
-      $("body").addClass("wrong");
-      setTimeout(function () {
-        $("body").removeClass("wrong");
-      }, 500);
-    }
-
-    setTimeout(function () {
-      input = "";
-      $(".dot").css("background", "rgba(255, 255, 255, 0.5)");
-    }, 500);
-  }
-});
+			correctSound.play();
+			$('body').addClass('correct');
+			setTimeout(function() {
+				$('body').removeClass('correct')
+			},500)
+		} else {
+			wrongSound.play()
+			$('body').addClass('wrong')
+			setTimeout(function() {
+				$('body').removeClass('wrong')
+			},500)
+		}
+		
+		setTimeout(function() {
+			input = '';
+			$('.dot').css('background','rgba(255, 255, 255, 0.5)')
+		},500)
+	}
+})
