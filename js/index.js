@@ -1,11 +1,11 @@
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyDixWv9uLD8cMkTSjZ6CWxK1PIhgli_VyY",
-    authDomain: "time-clock-38dfc.firebaseapp.com",
-    databaseURL: "https://time-clock-38dfc.firebaseio.com",
-    projectId: "time-clock-38dfc",
-    storageBucket: "time-clock-38dfc.appspot.com",
-    messagingSenderId: "267709784938"
+    apiKey: "AIzaSyAcADcaoayZEsNr9XAaRpat0C2pwwQzWV0",
+    authDomain: "time-clock-1d087.firebaseapp.com",
+    projectId: "time-clock-1d087",
+    storageBucket: "time-clock-1d087.appspot.com",
+    messagingSenderId: "208087128442",
+    appId: "1:208087128442:web:0702a72b852086ed011ec3"
 };
 
 firebase.initializeApp(config);
