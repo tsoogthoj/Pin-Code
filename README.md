@@ -1,6 +1,6 @@
 # Pin-Code
 
-Simple time clock to log staffs' time. 
+Simple time clock to log staffs' time. Create your own or use existing staff and pin. The pin to test out the punch pad is 1111 for Chong Thao.
 
 Punch Pad
 https://tsoogthoj.github.io/Pin-Code/
