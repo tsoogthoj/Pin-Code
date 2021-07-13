@@ -14,3 +14,4 @@ Technoloy used
 - CSS
 - Jquery
 - Moment JS
+- <a href="https://firebase.google.com/">Firebase</a> was used to store data
